@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks to Grade</title>
+</head>
+<body>
+    <script>
+        let x = prompt("Enter your marks (0-100):");
+        x = Number(x); 
+
+        if (x >= 95 && x <= 100) {
+            document.write("Grade: A");
+        } else if (x >= 80 && x<95) {
+            document.write("Grade: B");
+        } else if (x >= 65 && x<80) {
+            document.write("Grade: C");
+        } else if (x >= 50 && x<65) {
+            document.write("Grade: D");
+        } else if (x >= 35&& x<50) {
+            document.write("Grade: E");
+        } else if (x >= 0 && x < 35) {
+            document.write("Grade: F");
+        } else {
+            document.write("Enter a valid mark (0-100)");
+        }
+    </script>
+</body>
+</html>
